@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="design.html">Cutomise!</a>
+        <a href="contact.html">Get in touch!</a>
+    </nav>
+        <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+            <h2>Got recommendations? let us know!</h2>
+            <hr>
+        </div>
+        <input type="text" name="name" placeholder="Your name" class="contact-inputs" required>
+        <input type="hidden" name="subject" value="New Form Submission">
+        <input type="hidden" name="access_key" value="217d08fa-f369-4312-a284-a7cdadcd81f0">
+        <input type="hidden" name="recipient_email" id="recipient_email_input" value="">
+<input type="email" id="email_input" placeholder="Your email" class="contact-inputs" required>
+<script>
+    document.getElementById("email_input").addEventListener("input", function() {
+        document.getElementById("recipient_email_input").value = this.value;
+    });
+</script>
+        <textarea name="message" placeholder="Your message" class="contact-inputs" required></textarea>
+        <h5>(Try growing or shrinking your message box to help you!)</h5>
+        <button type="submit">send<img src="opp.png" alt=""></button>
+        </form>
+    <div class="contact-right">
+
+    </div>
+
+    </div>
+
+    
+</body>
+</html>

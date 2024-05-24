@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin-top: 50px;
+    background: linear-gradient(#BD9B9B,white);
+}
+.contact-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 35px;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    margin-left: 35px;
+}
+.contact-left-title h2{
+    font-weight: 600;
+    color: #a08972;
+    font-size: 40px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #a08972;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 150px;
+}
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #a08972;
+    border-radius: 50px;
+}
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contact-inputs:focus{
+    border: 2px solid #a08972;
+}
+.contact-inputs::placeholder{
+    color: #a08972;
+}
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #ffffff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg,#ff994f, #fa6d86);
+    cursor: pointer;
+}
+.contact-left button img{
+    height: 15px;
+}
+
+.mannequin {
+    width: 550px;
+    height: 800px;
+    background-color: #f0f0f0;
+    margin: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.draggable {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+html, body {
+    height: 900px;
+    width: 600px;
+    margin: 0;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.mannequin-wrapper {
+    position: absolute;
+    top: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.mannequin img {
+    width: 90%;
+    height: 90%;
+}
+h5{
+    color: #a08972;
+    margin-left: 35px;
+}
